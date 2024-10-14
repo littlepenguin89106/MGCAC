@@ -1,0 +1,35 @@
+DIR: 
+  dataset: "/workspaces/research/cac/dataset/FSC147/"
+  exp: "mgcac_"
+  runs: "/workspaces/research/cac/exp/"
+
+DATASET:
+  list_train: "/workspaces/research/cac/dataset/FSC147/train.txt"
+  list_val: "/workspaces/research/cac/dataset/FSC147/val.txt"
+  list_test: "/workspaces/research/cac/dataset/FSC147/test.txt"
+  exemplar_number: 3
+
+TRAIN:
+  resume: "model_ckpt.pth"
+  optimizer: "AdamW"
+  device: "cuda"
+  batch_size: 8
+  epochs: 300
+  lr_backbone: 1e-5
+  lr: 1e-4
+  lr_drop: 300
+  momentum: 0.95
+  weight_decay: 5e-4
+  clip_max_norm: 0.1
+  num_workers: 0
+  seed: 430
+
+MODEL:
+  BACKBONE:
+    PRETRAINED_PATH: '/workspaces/research/cac/pretrained/CvT-21-384x384-IN-22k.pth'
+
+VAL:
+  resume: "model_best.pth"
+  evaluate_only: False
+  visualization: False
+

@@ -1,0 +1,7 @@
+opencv-python
+scipy
+yacs
+matplotlib
+tqdm
+timm
+einops
