@@ -17,7 +17,7 @@ Download the data from [here](https://drive.google.com/file/d/1EtoCo6TT_gpdGSL0p
 We use YAML files in the `config` directory to run experiments. Please refer to `default.py` for parameter setup.
 
 ### Pretrained Weights
-Download the pretrained weights from [here](https://drive.google.com/file/d/17jVlHF3NscQgbTlVQiud2eYut9SCKYfs/view?usp=sharing). Then modify `DIR.runs` and `DIR.exp` in the configuration to set the path to your pretrained weights.
+Download the pretrained weights from [here](https://drive.google.com/file/d/1fH1Hbs8sxPIsWslq37h42i-kggnDEhYJ/view?usp=sharing). Then modify `DIR.runs` and `DIR.exp` in the configuration to set the path to your pretrained weights.
 
 ### Evaluating FSC147
 Run `python main.py --cfg=config/eval_fsc.yaml`.
